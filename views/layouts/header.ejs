@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand rounded" href="#"><img
+        src="https://cdn.discordapp.com/icons/737094472478883981/82fd49d1b9817f08c3dec91bb0d3dfe7.webp?size=128"
+        width="30" height="30" class="d-inline-block align-top mr-2" alt="" loading="lazy">KSS</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item <% if (title == "Index") { %> active <% } %>">
+          <a class="nav-link" href="/">Home <% if (title == "Index") { %><span class="sr-only">
+              (current)
+            </span><% } %></a>
+        </li>
+        <li class="nav-item <% if (title == "Sorties") { %> active <% } %>">
+          <a class="nav-link" href="/sorties">Sorties <% if (title == "Sorties") { %><span class="sr-only">
+              (current)
+            </span><% } %></a>
+        </li>
+        <li class="nav-item <% if (title == "Team") { %> active <% } %>">
+          <a class="nav-link" href="/team">La Team <% if (title == "Team") { %><span class="sr-only">
+              (current)
+            </span><% } %></a>
+        </li>
+        <li class="nav-item <% if (title == "Planning") { %> active <% } %>">
+          <a class="nav-link" href="/planning">Le Planning <% if (title == "Planning") { %><span class="sr-only">
+              (current)
+            </span><% } %></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">

@@ -1,0 +1,20 @@
+﻿<%- include('layouts/header'); -%>
+<br>
+<br>
+<form class="mx-5" id="logIn" method="POST" action="./submitLogInForm">
+
+  <div class="form-group">
+    <label for="exampleInputEmail1">Pseudo</label>
+    <input type="text" class="form-control" id="Pseudo" name="pseudo">
+  </div>
+
+  <div class="form-group">
+    <label for="Password">Mot de passe</label>
+    <input type="password" class="form-control" id="password" name="password">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<script src="/js/formValidation.js"></script>
+
+<%- include('layouts/footer'); -%>

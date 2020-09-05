@@ -1,0 +1,136 @@
+﻿.btn-discord {
+  color: #fff;
+  background-color: #7289DA;
+  border-color: #7289DA
+}
+
+.btn-discord:hover {
+  color: #fff;
+  background-color: #6478c0;
+  border-color: #5c6ead
+}
+
+.btn-discord.focus,
+.btn-discord:focus {
+  color: #fff;
+  background-color: #6478c0;
+  border-color: #5c6ead;
+  box-shadow: 0 0 0 .2rem #268fff80
+}
+
+.btn-discord.disabled,
+.btn-discord:disabled {
+  color: #fff;
+  background-color: #7289DA;
+  border-color: #7289DA
+}
+
+.btn-discord:not(:disabled):not(.disabled).active,
+.btn-discord:not(:disabled):not(.disabled):active,
+.show>.btn-discord.dropdown-toggle {
+  color: #fff;
+  background-color: #5c6ead;
+  border-color: #005cbf
+}
+
+.btn-discord:not(:disabled):not(.disabled).active:focus,
+.btn-discord:not(:disabled):not(.disabled):active:focus,
+.show>.btn-discord.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5)
+}
+
+.btn-mangadex {
+  color: #fff;
+  background-color: #f79421;
+  border-color: #f79421
+}
+
+.btn-mangadex:hover {
+  color: #fff;
+  background-color: #eb8c1f;
+  border-color: #d47f1e
+}
+
+.btn-mangadex.focus,
+.btn-mangadex:focus {
+  color: #fff;
+  background-color: #eb8c1f;
+  border-color: #d47f1e;
+  box-shadow: 0 0 0 .2rem #268fff80
+}
+
+.btn-mangadex.disabled,
+.btn-mangadex:disabled {
+  color: #fff;
+  background-color: #f79421;
+  border-color: #f79421
+}
+
+.btn-mangadex:not(:disabled):not(.disabled).active,
+.btn-mangadex:not(:disabled):not(.disabled):active,
+.show>.btn-mangadex.dropdown-toggle {
+  color: #fff;
+  background-color: #d47f1e;
+  border-color: #005cbf
+}
+
+.btn-mangadex:not(:disabled):not(.disabled).active:focus,
+.btn-mangadex:not(:disabled):not(.disabled):active:focus,
+.show>.btn-mangadex.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5)
+}
+
+.btn-twitter {
+  color: #fff;
+  background-color: #00acee;
+  border-color: #00acee
+}
+
+.btn-twitter:hover {
+  color: #fff;
+  background-color: #00acee;
+  border-color: #008abe
+}
+
+.btn-twitter.focus,
+.btn-twitter:focus {
+  color: #fff;
+  background-color: #00acee;
+  border-color: #008abe;
+  box-shadow: 0 0 0 .2rem #268fff80
+}
+
+.btn-twitter.disabled,
+.btn-twitter:disabled {
+  color: #fff;
+  background-color: #f79421;
+  border-color: #f79421
+}
+
+.btn-twitter:not(:disabled):not(.disabled).active,
+.btn-twitter:not(:disabled):not(.disabled):active,
+.show>.btn-twitter.dropdown-toggle {
+  color: #fff;
+  background-color: #008abe;
+  border-color: #005cbf
+}
+
+.btn-twitter:not(:disabled):not(.disabled).active:focus,
+.btn-twitter:not(:disabled):not(.disabled):active:focus,
+.show>.btn-twitter.dropdown-toggle:focus {
+  box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5)
+}
+
+.overDisplay p {
+  transition: opacity 1s ease-out;
+  transition-duration: 1s;
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.overDisplay:hover p,
+.overDisplay:active p {
+  opacity: 1;
+  height: auto;
+}

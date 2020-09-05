@@ -1,0 +1,27 @@
+﻿<%- include('layouts/header'); -%>
+
+<div class="row">
+  <% for( let i = 0; i < rssData.length; i++ ) { %>
+
+  <div class="col-sm-4 my-1">
+
+    <div class="card">
+      <img class="card-img-top" src="<%= sentData[i].couverture %> " alt="" loading="lazy">
+
+      <div class="card-body">
+        <h5 class="card-title"><%= sentData[i].titre %> </h5>
+        <p class="card-text">
+          <%= sentData[i].chapitre %>
+        </p>
+        <a href="<%= sentData[i].liens %> " class="btn btn-primary">Aller voir !</a>
+      </div>
+    </div>
+  </div>
+
+  <% } %>
+
+</div>
+
+
+
+<%- include('layouts/footer'); -%>

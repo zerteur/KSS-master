@@ -1,0 +1,41 @@
+﻿<%- include('layouts/header'); -%>
+
+<div class="jumbotron my-4">
+  <h1 class="display-4">Nous retrouver</h1>
+  <p class="lead">Jeune Team de scan trad en quête d'aventures. Peut être jeune mais dynamique, nous souhaitons
+    reprendre les projets abandonnés.</p>
+  <hr class="my-4">
+  <a class="btn btn-discord btn-lg" href="/discord" role="button"><img src="/img/Discord-Logo.png" height="50px"></a>
+  <a class="btn btn-mangadex btn-lg" href="https://mangadex.org/group/13463/k-s-s-scantrad" role="button"
+    style="height:68px;font-size:33px">Mangadex</a>
+  <a class="btn btn-twitter btn-lg" href="https://twitter.com/KSS75054983" role="button"
+    style="height:68px;font-size:33px">Twitter</a>
+  <a class="btn btn-primary btn-lg" href="mailto:kansei.shita.sakuhin@gmail.com" role="button"
+    style="height:68px;font-size:33px">Mail</a>
+</div>
+
+<hr>
+
+<div class="row">
+  <% for( let i = 0; i < rssData.length; i++ ) { %>
+
+  <div class="col-sm-4 my-1">
+
+    <div class="card">
+      <img class="card-img-top" src="<%= sentData[i].couverture %> " alt="">
+
+      <div class="card-body">
+        <h5 class="card-title"><%= sentData[i].titre %> </h5>
+        <p class="card-text">
+          <%= sentData[i].chapitre %>
+        </p>
+        <a href="<%= sentData[i].liens %> " class="btn btn-primary">Aller voir !</a>
+      </div>
+    </div>
+  </div>
+
+  <% } %>
+
+</div>
+
+<%- include('layouts/footer'); -%>
